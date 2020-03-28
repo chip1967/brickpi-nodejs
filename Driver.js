@@ -26,7 +26,7 @@ var Driver = function(serialPortAddress) {
 };
 
 Driver.prototype.open = function(callback) {    
-    this._serialPort = new SerialPort(this._serialPortAddress, {baudrate: 500000});
+    this._serialPort = new SerialPort(this._serialPortAddress, {baudRate: 500000});
     
     // open serial communication
     this._serialPort.on("open", function(err) {
